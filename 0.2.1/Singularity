@@ -1,0 +1,13 @@
+Bootstrap: docker
+From: quay.io/biocontainers/filtlong:0.2.1--hdcf5f25_3
+
+%labels
+    MAINTAINER icaoberg
+    EMAIL icaoberg@psc.edu
+    SUPPORT help@psc.edu
+    REPOSITORY https://github.com/pscedu/singularity-filtlong
+    COPYRIGHT Copyright © 2024 Pittsburgh Supercomputing Center. All Rights Reserved.
+    VERSION 0.2.1
+
+%runscript
+    filtlong "$@"
